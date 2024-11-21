@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="mdb.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Navbar */
+.navbar {
+  background-color: #33ffda;
+}
+
+/* Home Section */
+#home {
+  background-color: #FFCCCB;
+  color: #333333;
+}
+
+/* About Section */
+.bg-mintgreen {
+  background-color: #E0F7FA;
+  color: #333333;
+}
+
+/* Skills Icons and Progress Bars */
+.text-danger { color: #E63946; }
+.text-primary { color: #4361EE; }
+.text-warning { color: #ff030b; }
+
+.progress-bar.bg-success { background-color: #00B4D8; }
+.progress-bar.bg-info { background-color: #48CAE4; }
+.progress-bar.bg-warning { background-color: #03ffa3; }
+
+/* Footer */
+footer.bg-dark {
+  background-color:#071112;
+}
+footer .nav-link {
+  color: #F2E9E4;
+}
+footer .social-buttons .fab {
+  color: #F4A261;
+}
+footer .social-buttons .fab.fa-youtube { color: #FF0000; }
+footer .social-buttons .fab.fa-facebook-f { color: #4267B2; }
+footer .social-buttons .fab.fa-twitter { color: #1DA1F2; }
+
+/* Contact and Projects Sections */
+
+#contact {
+  background-color:#E0F7FA;
+
+  color: #333333;
+}
+#projects {
+  background-color: #b7eade ;
+  color: #333333;
+}
+    </style>
+</head>
+<body>
+     <script src="jquery.js" type="text/javascript"></script>
+    <script src="bootstrapjs.js" type="text/javascript"></script>
+    <script src="mdbjs.js" type="text/javascript"></script>
+    <script src="popper.js" type="text/javascript"></script>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container">
+              <a class="navbar-brand" href="#home">My Portfolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <!-- Home Link -->
+                      <li class="nav-item">
+                          <a class="nav-link" href="Home.html">
+                              <i class="bi bi-house-door-fill"></i> Home
+                          </a>
+                      </li>
+                      <!-- About Link -->
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">
+                              <i class="bi bi-person-fill"></i> About
+                          </a>
+                      </li>
+                      <!-- Skills Link -->
+                      <li class="nav-item">
+                          <a class="nav-link" href="Skills.html">
+                              <i class="bi bi-bar-chart-line-fill"></i> Skills
+                          </a>
+                      </li>
+                      <!-- Projects Link -->
+                      <li class="nav-item">
+                          <a class="nav-link" href="project.html">
+                              <i class="bi bi-folder-fill"></i> Projects
+                          </a>
+                      </li>
+                      <!-- Contact Link -->
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">
+                              <i class="bi bi-envelope-fill"></i> Contact
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+        
+
+
+<!-- Home Section -->
+<section class="bgimage" id="home" style="background-image: url('bgimg.jpg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div class="container-fluid">
+      <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <h2 class="hero_title" style="color: white">Hi, it's me Shaiza</h2>
+          <p class="hero_desc" style="color:white">I am a professional freelancer in New York City</p>
+      </div>
+      </div>
+  </div>
+</section>
+    <!-- About Me Section -->
+  
+<section id="about" class="py-5 bg-mintgreen">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="Profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle" width="200px">
+          </div>
+          <div class="col-lg-8 col-md-6 col-sm-12">
+              <h1>About Me</h1>
+              <p>Hi, I’m Shaiza, a Computer Science student passionate about crafting user-friendly and visually appealing web experiences.
+                 I specialize in HTML, CSS, and JavaScript, and I enjoy turning ideas into functional and interactive designs.
+                  As I pursue my degree, I’m constantly learning and growing as a developer.
+                   My goal is to create impactful web applications that combine creativity with technology.
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <h4><i class="fab fa-html5 text-danger"></i> HTML</h4> <!-- HTML icon with color -->
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 80%;">80%</div>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center">
+        <h4><i class="fab fa-css3-alt text-primary"></i> CSS</h4> <!-- CSS icon with color -->
+        <div class="progress">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 70%;">70%</div>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center">
+        <h4><i class="fab fa-js-square text-warning"></i> JavaScript</h4> <!-- JavaScript icon with color -->
+        <div class="progress">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;">60%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+    
+    
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-mintgreen">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+      <!-- Project Card 1 -->
+      <div class="col-md-4">
+        <div class="card project-card mb-4" style="border-radius: 20px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;">
+          <img src="project3.jpg" class="card-img-top" alt="Portfolio Showcase" style="border-radius: 20px 20px 0 0;">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Showcase</h5>
+            <p class="card-text">A responsive personal portfolio website to showcase skills, projects, and achievements in a user-friendly way.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="col-md-4">
+        <div class="card project-card mb-4" style="border-radius: 20px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;">
+          <img src="project3.jpg" class="card-img-top" alt="E-commerce Platform" style="border-radius: 20px 20px 0 0;">
+          <div class="card-body">
+            <h5 class="card-title">E-commerce Platform</h5>
+            <p class="card-text">An online shopping platform with a sleek design, product search, cart functionality, and secure checkout process.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="col-md-4">
+        <div class="card project-card mb-4" style="border-radius: 20px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;">
+          <img src="project3.jpg" class="card-img-top" alt="Blog CMS" style="border-radius: 20px 20px 0 0;">
+          <div class="card-body">
+            <h5 class="card-title">Blog CMS</h5>
+            <p class="card-text">A content management system for bloggers, featuring post creation, editing, and commenting capabilities.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Inline CSS for Hover Effect -->
+<style>
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+</style>
+
+          <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+       <!-- Footer Section -->
+       <footer class="bg-dark text-white py-4">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-4 footer-column">
+        <ul class="nav flex-column">
+        <li class="nav-item">
+        <span class="footer-title">About</span>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Skills</a>
+        </li>
+        
+        
+        </ul>
+        </div>
+        <div class="col-md-4 footer-column">
+        <ul class="nav flex-column">
+        <li class="nav-item">
+        <span class="footer-title">Project</span>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Project 1</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Project 2</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Project 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Frequently asked questions</a>
+          </li>
+        </ul>
+        </div>
+        <div class="col-md-4 footer-column">
+        <ul class="nav flex-column">
+        <li class="nav-item">
+        <span class="footer-title">Contact</span>
+        </li>
+        <li class="nav-item">
+        <span class="nav-link"><i class="fas fa-phone"></i>+47 45 80 80 80</span>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-comments"></i>Live chat</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact us</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-star"></i>Give feedback</a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        
+        <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
+        
+        <div class="row text-center">
+        <div class="col-md-4 box">
+        <span class="copyright quick-links">Copyright &copy; Your Website <script>document.write(new Date().getFullYear())</script>
+        </span>
+        </div>
+        <div class="col-md-4 box">
+          <p>Follow me on:</p>
+        <ul class="list-inline social-buttons">
+        <li class="list-inline-item">
+        <a href="https://www.youtube.com/" class="text-white me-3" target="_blank" style="color:#FF0000;">
+        <i class="fab fa-youtube">Youtube</i>
+        </a>
+        </li>
+        <li class="list-inline-item">
+        <a href="https://www.facebook.com/" class="text-white me-3" target="_blanklor:#4267B2;">
+        <i class="fab fa-facebook-f">Facebook</i>
+        </a>
+        </li>
+        <li class="list-inline-item">
+        <a href="https://www.twitter.com/" class="text-white me-3" target="_blank" style="color:#1DA1F2;">
+        <i class="fab fa-twitter">Twitter</i>
+        </a>
+        </li>
+        </ul>
+        </div>
+        <div class="col-md-4 box">
+        <ul class="list-inline quick-links">
+        <li class="list-inline-item">
+        <a href="#">Privacy Policy</a>
+        </li>
+        <li class="list-inline-item">
+        <a href="#">Terms of Use</a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </footer>
+  
+      
+      
+  </body>
+  </html>
+      
